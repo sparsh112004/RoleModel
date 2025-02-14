@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/RoleModel/static/css/main.57d930f3.css",
+    "main.js": "/RoleModel/static/js/main.f967e6b5.js",
+    "static/js/453.cb35330a.chunk.js": "/RoleModel/static/js/453.cb35330a.chunk.js",
+    "index.html": "/RoleModel/index.html",
+    "main.57d930f3.css.map": "/RoleModel/static/css/main.57d930f3.css.map",
+    "main.f967e6b5.js.map": "/RoleModel/static/js/main.f967e6b5.js.map",
+    "453.cb35330a.chunk.js.map": "/RoleModel/static/js/453.cb35330a.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.57d930f3.css",
+    "static/js/main.f967e6b5.js"
+  ]
+}
