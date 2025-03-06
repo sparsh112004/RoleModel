@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import './Home.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-
 function Home() {
   const [selectedModel, setSelectedModel] = useState(null);
 
@@ -58,16 +57,16 @@ function Home() {
     const model = roleModels[selectedModel];
     return (
       <div className="selected-model-container">
-        <div className="container py-5">
+        <div className="container py-3">
           <button className="btn btn-secondary mb-4" onClick={handleBack}>
             ← Back to Role Models
           </button>
           
           <div className="role-model-details">
-            <h1 className="display-4 mb-4">{model.name}</h1>
-            <p className="lead mb-5">{model.title}</p>
+            <h1 className="mb-3">{model.name}</h1>
+            <p className="lead mb-4">{model.title}</p>
 
-            <div className="quote-section mb-5">
+            <div className="quote-section mb-4">
               <blockquote className="blockquote text-center">
                 <p className="mb-0">"{model.quote}"</p>
                 <footer className="blockquote-footer">{model.name}</footer>
@@ -77,7 +76,7 @@ function Home() {
             <h2 className="text-center mb-4">Key Achievements</h2>
             <div className="row">
               {model.achievements.map((achievement, index) => (
-                <div className="col-md-4 mb-4" key={index}>
+                <div className="col-md-4 col-sm-6 mb-4" key={index}>
                   <div className="achievement-card">
                     <h3>{achievement.title}</h3>
                     <p>{achievement.description}</p>
@@ -93,11 +92,11 @@ function Home() {
 
   return (
     <div className="home-container">
-      <div className="container py-5">
-        <h1 className="text-center mb-5">Inspiring Role Models</h1>
+      <div className="container py-3">
+        <h1 className="text-center mb-4">Inspiring Role Models</h1>
         <div className="row justify-content-center">
           {Object.entries(roleModels).map(([key, model]) => (
-            <div className="col-md-6 mb-4" key={key}>
+            <div className="col-lg-6 col-md-8 col-sm-12 mb-4" key={key}>
               <div className="role-model-card">
                 <img 
                   src={model.image} 
